@@ -47,7 +47,7 @@ const vm = new Vue({
           {{ item.name }}
         </label>
       </li>
-      <input type="text" v-model="add" @keyup.enter="addItem">
+      <input type="text" v-model="add" @keyup.enter="addItem" placeholder="項目を追加">
     </ul>
   `,
 });
