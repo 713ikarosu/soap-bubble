@@ -147,4 +147,58 @@ const vm_day3 = new Vue({
   `,
 });
 
+const vm_link = new Vue({
+  el: '#link-area',
+  data: {
+    links: [
+      {
+        name: "くまちゃん温泉",
+        link: "https://tabelog.com/hokkaido/A0101/A010103/1064401/",
+      },{
+        name: "こみちの湯 ほのか",
+        link: "https://www.yudokoro-honoka.jp/komichi/",
+      },{
+        name: "すすきの天然温泉 湯香郷",
+        link: "https://www.toukakyo.jp/price.php",
+      },{
+        name: "羽田第2ターミナル",
+        link: "https://www.airdo.jp/departure/airport/haneda/",
+      },{
+        name: "skyticketページ",
+        link: "https://skyticket.jp/user/search.php?mode=application_detail&cm_application_id=12727742",
+      },{
+        name: "定山渓温泉(しゅんさん)",
+        link: "https://jozankei.jp/index-sm",
+      },{
+        name: "えびそば一幻",
+        link: "https://tabelog.com/hokkaido/A0107/A010701/1034338/",
+      },{
+        name: "伊勢鮨(小樽)",
+        link: "https://tabelog.com/hokkaido/A0106/A010601/1045303/",
+      },{
+        name: "だるま本店(札幌)(寿司)",
+        link: "https://tabelog.com/hokkaido/A0101/A010103/1000007/",
+      },{
+        name: "麺屋 雪風 すすきの本店",
+        link: "https://ramendb.supleks.jp/s/29360.html",
+      },{
+        name: "小樽クルーズ",
+        link: "https://hokuo-marine.com/about.html#price",
+      },{
+        name: "二条市場ガイド",
+        link: "https://haveagood.holiday/articles/857",
+      },{
+        name: "NAVITIME",
+        link: "https://www.navitime.co.jp/",
+      },
 
+    ]
+  },
+  template: `
+    <ul class="link-area">
+      <li v-for="item in links">
+        <a :href="item.link">{{item.name}}</a>
+      </li>
+    </ul>
+  `,
+});
