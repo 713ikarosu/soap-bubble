@@ -15,6 +15,11 @@ ul {
   padding: 0 16px;
 }
 
+iframe {
+  height: 60vh;
+  margin-bottom: 28px;
+}
+
 .main-img {
   background: url(../img/img8.jpg);
   width: 100%;
