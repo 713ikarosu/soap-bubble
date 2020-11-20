@@ -57,7 +57,6 @@ const vm_day1 = new Vue({
           {{ item }}
         </label>
       </li>
-      <input type="text">
     </ul>
   `,
 });
@@ -88,7 +87,6 @@ const vm_day2 = new Vue({
           {{ item }}
         </label>
       </li>
-      <input type="text">
     </ul>
   `,
 });
@@ -113,7 +111,6 @@ const vm_day3 = new Vue({
           {{ item }}
         </label>
       </li>
-      <input type="text">
     </ul>
   `,
 });
