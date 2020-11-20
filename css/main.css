@@ -1,4 +1,12 @@
+li {
+  list-style-type: none;
+}
+
 .main-img {
   background: url(../img/img8.jpg);
+  width: 100%;
+}
+
+.weather img {
   width: 100%;
 }
