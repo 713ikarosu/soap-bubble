@@ -12,9 +12,17 @@ const vm = new Vue({
       "ヘアアイロン",
       "風呂グッズ",
       "おもろいなにか"
-    ]
+    ],
+    add: ""
   },
-  methods: {},
+  methods: {
+    addItem() {
+      if(this.add) {
+        this.itemList.push(this.add);
+        this.add = "";
+      }
+    }
+  },
   template: `
     <ul>
       <li v-for="item in itemList">
@@ -23,7 +31,7 @@ const vm = new Vue({
           {{ item }}
         </label>
       </li>
-      <input type="text">
+      <input type="text" v-model="add" @keyup.enter="addItem">
     </ul>
   `,
 });
